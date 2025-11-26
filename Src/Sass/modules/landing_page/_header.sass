@@ -1,0 +1,74 @@
+*
+    margin: 0
+    padding: 0
+    text-transform: capitalize
+
+nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-inline: 5vw
+    padding-block: 2vh
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15)
+    .part1_nav, ul,.part2_nav
+        display: flex
+        align-items: center
+        gap: 2vw
+    ul
+        list-style-type: none
+        // background-color: yellow
+        text-transform: capitalize
+        transition: 2s
+
+.part2_nav
+    img
+        width: 50px
+    svg
+        fill: gray
+
+#check, label[for="check"]
+    display: none
+@media screen and (max-width: 480px)
+
+    nav
+        margin-inline: 0
+        padding-inline: 5vw
+        label[for="check"]
+            display: flex
+        label[for="check"] img
+            width: 20px
+            align-self: center
+            margin-inline-end: 2vw
+
+    nav
+        .part1_nav
+
+            ul
+                position: absolute
+                flex-direction: column
+                gap: 5vh
+                top: 0
+                left: -500px
+                width: 250px
+                background: white
+                align-items: start
+                padding-inline-start: 4vw
+                padding-block-start: 3vh
+                height: 100vh
+                box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2)
+
+    #check
+        
+        &:checked ~ .part1_nav
+            ul
+                position: absolute
+                left: 0
+            &::before
+                content: ""
+                position: absolute
+                top: 0
+                right: 0
+                bottom: 0
+                left: 0
+                background-color: black
+                opacity: 0.5 
