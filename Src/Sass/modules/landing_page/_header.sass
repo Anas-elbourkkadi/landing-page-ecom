@@ -16,9 +16,56 @@ nav
         gap: 2vw
     ul
         list-style-type: none
-        // background-color: yellow
         text-transform: capitalize
-        transition: 2s
+        transition: 1s
+.grandparnet
+    margin-block: 4vh
+    display: flex
+    justify-content: center
+    padding-inline: 5vw
+    gap: 10vw
+.containerimg
+    img[src="./Public/images/images/image-product-1.jpg"]
+        width: 600px
+        border-radius: 1rem
+        margin-block-end: 3vh
+    .imges
+        display: flex
+        gap: 4vw
+        img
+            width: calc(450px / 4)
+            border-radius: 1rem
+img[src="./Public/images/images/image-product-1-thumbnail.jpg"]
+    outline: 3px solid orangered
+    opacity: 0.5
+
+.containertext
+    display: flex
+    flex-direction: column
+    padding-block: 10vh
+    gap: 6vh
+
+    .title
+
+        h2
+            margin-top: 4vh
+            font-size: 38px
+    .price
+        display: flex
+        gap: 3vw
+        font-weight: 900
+        font-size: 25px
+        .pirsent
+            color: white
+            font-size: 16px
+            background-color: black
+            box-sizing: border-box
+            // vertical-align: middle
+            padding-block: 1vh
+            padding-inline: 1vw
+            border-radius: 0.5rem
+    .sentence
+        line-height: 30px
 
 .part2_nav
     img
@@ -28,6 +75,27 @@ nav
 
 #check, label[for="check"]
     display: none
+
+#carouselExampleControlsNoTouching
+    display: none
+
+.cart
+    display: flex
+    gap: 1vw
+    padding-block: 1vw
+    padding-inline: 4vw
+    background-color: orangered
+    border: none
+    border-radius: 0.5rem
+    box-sizing: border-box
+    svg
+        align-self: center
+.buttons2
+    display: flex
+    align-items: center
+    gap: 2vw
+
+//====== v: mobile ============
 @media screen and (max-width: 480px)
 
     nav
@@ -56,9 +124,10 @@ nav
                 padding-block-start: 3vh
                 height: 100vh
                 box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2)
+                z-index: 999
 
     #check
-        
+
         &:checked ~ .part1_nav
             ul
                 position: absolute
@@ -71,4 +140,45 @@ nav
                 bottom: 0
                 left: 0
                 background-color: black
-                opacity: 0.5 
+                opacity: 0.5
+                z-index: 888
+
+    .grandparnet
+        flex-direction: column
+        .containerimg
+            display: none
+        #carouselExampleControlsNoTouching
+            display: block
+        // =============================
+
+    .containertext
+        padding-block: 0
+        gap: 2vh
+        .title
+            p
+                font-size: 20px
+                text-transform: uppercase
+            h2
+                margin-top: 1vh
+    .conatinertext2
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .price
+            align-items: center
+            .pirsent
+                padding-block: 1vh
+                vertical-align: middle
+                padding-inline: 3vw
+
+    .buttons2
+        flex-direction: column
+        gap: 2vh
+        .btn-group
+            width: 75%
+            .btn
+                padding-block: 1vh
+        .cart
+            width: 75%
+            padding-inline: 2vh
+            padding-block: 1vh

@@ -20,7 +20,63 @@ nav .part1_nav, nav ul, nav .part2_nav {
 nav ul {
   list-style-type: none;
   text-transform: capitalize;
-  transition: 2s;
+  transition: 1s;
+}
+
+.grandparnet {
+  margin-block: 4vh;
+  display: flex;
+  justify-content: center;
+  padding-inline: 5vw;
+  gap: 10vw;
+}
+
+.containerimg img[src="./Public/images/images/image-product-1.jpg"] {
+  width: 600px;
+  border-radius: 1rem;
+  margin-block-end: 3vh;
+}
+.containerimg .imges {
+  display: flex;
+  gap: 4vw;
+}
+.containerimg .imges img {
+  width: 112.5px;
+  border-radius: 1rem;
+}
+
+img[src="./Public/images/images/image-product-1-thumbnail.jpg"] {
+  outline: 3px solid orangered;
+  opacity: 0.5;
+}
+
+.containertext {
+  display: flex;
+  flex-direction: column;
+  padding-block: 10vh;
+  gap: 6vh;
+}
+.containertext .title h2 {
+  margin-top: 4vh;
+  font-size: 38px;
+}
+.containertext .price {
+  display: flex;
+  gap: 3vw;
+  font-weight: 900;
+  font-size: 25px;
+}
+.containertext .price .pirsent {
+  color: white;
+  font-size: 16px;
+  background-color: black;
+  box-sizing: border-box;
+  padding-block: 1vh;
+  padding-inline: 1vw;
+  border-radius: 0.5rem;
+}
+.containertext .sentence {
+  line-height: 30px;
 }
 
 .part2_nav img {
@@ -32,6 +88,30 @@ nav ul {
 
 #check, label[for=check] {
   display: none;
+}
+
+#carouselExampleControlsNoTouching {
+  display: none;
+}
+
+.cart {
+  display: flex;
+  gap: 1vw;
+  padding-block: 1vw;
+  padding-inline: 4vw;
+  background-color: orangered;
+  border: none;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+}
+.cart svg {
+  align-self: center;
+}
+
+.buttons2 {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
 }
 
 @media screen and (max-width: 480px) {
@@ -60,6 +140,7 @@ nav ul {
     padding-block-start: 3vh;
     height: 100vh;
     box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
   }
   #check:checked ~ .part1_nav ul {
     position: absolute;
@@ -74,6 +155,55 @@ nav ul {
     left: 0;
     background-color: black;
     opacity: 0.5;
+    z-index: 888;
+  }
+  .grandparnet {
+    flex-direction: column;
+  }
+  .grandparnet .containerimg {
+    display: none;
+  }
+  .grandparnet #carouselExampleControlsNoTouching {
+    display: block;
+  }
+  .containertext {
+    padding-block: 0;
+    gap: 2vh;
+  }
+  .containertext .title p {
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  .containertext .title h2 {
+    margin-top: 1vh;
+  }
+  .conatinertext2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .conatinertext2 .price {
+    align-items: center;
+  }
+  .conatinertext2 .price .pirsent {
+    padding-block: 1vh;
+    vertical-align: middle;
+    padding-inline: 3vw;
+  }
+  .buttons2 {
+    flex-direction: column;
+    gap: 2vh;
+  }
+  .buttons2 .btn-group {
+    width: 75%;
+  }
+  .buttons2 .btn-group .btn {
+    padding-block: 1vh;
+  }
+  .buttons2 .cart {
+    width: 75%;
+    padding-inline: 2vh;
+    padding-block: 1vh;
   }
 }
 
