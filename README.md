@@ -37,45 +37,7 @@ SVG Icons
 
 📂 Project Structure
 .
-├── index.html
-├── Public
-│   ├── css
-│   │   ├── app.css
-│   │   └── app.css.map
-│   ├── images
-│   │   ├── design
-│   │   │   ├── desktop-design.jpg
-│   │   │   ├── mobile-design.jpg
-│   │   │   └── mobile-menu.jpg
-│   │   └── images
-│   │       ├── favicon-32x32.png
-│   │       ├── icon-cart.svg
-│   │       ├── icon-close.svg
-│   │       ├── icon-delete.svg
-│   │       ├── icon-menu.svg
-│   │       ├── icon-minus.svg
-│   │       ├── icon-next.svg
-│   │       ├── icon-plus.svg
-│   │       ├── icon-previous.svg
-│   │       ├── image-avatar.png
-│   │       ├── image-product-1.jpg
-│   │       ├── image-product-1-thumbnail.jpg
-│   │       ├── image-product-2.jpg
-│   │       ├── image-product-2-thumbnail.jpg
-│   │       ├── image-product-3.jpg
-│   │       ├── image-product-3-thumbnail.jpg
-│   │       ├── image-product-4.jpg
-│   │       ├── image-product-4-thumbnail.jpg
-│   │       └── logo.svg
-│   ├── Pages
-│   └── videos
-└── Src
-    └── Sass
-        ├── _allModules.sass
-        ├── app.sass
-        └── modules
-            └── landing_page
-                └── _header.sass
+
 
 📄 How It Works
 1. Navigation Menu
